@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feng Jiang's Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Feng Jiang" />
+        <meta name="description" content="Homepage of Feng Jiang, PhD Student at UTA" />
+        <meta name="keywords" content="Feng Jiang, PhD Student, University of Texas at Arlington" />
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+        <link href="css/main.css" rel="stylesheet" />
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" rel="stylesheet">
+        <style>
+            body {
+                margin-top: 60px;
+                padding-bottom: 100px;
+                position: relative;
+                background-color: #eeeeee;
+            }
+            
+            @media (max-width: 768px) {
+                body {
+                    margin-top: 100px; 
+                    padding-top: 50px;
+                }
+                
+                #body {
+                    padding-top: 50px; 
+                }
+            }
+
+            .nav-container {
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .container {
+                max-width: 900px;
+                width: 100%;
+                padding: 0 20px;
+                margin-top: 20px;
+            }
+            #body {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0 20px;
+                margin-top: 20px;
+            }
+        
+            .teaching-list li {
+                margin-bottom: 5px;
+                line-height: 1.4;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            section {
+                margin-bottom: 5px;
+                position: relative;
+            }
+            
+            .contentItem {
+                padding: 0 20px;
+            }
+            
+            .navbar-fixed-top {
+                margin-bottom: 20px;
+            }
+        
+            .navbar .nav > li > a {
+                padding: 15px 15px 10px;
+                color: #999;
+                transition: color 0.3s ease;
+            }
+            
+            .navbar .nav > li > a:hover {
+                color: #fff;
+                background: transparent;
+            }
+            
+            .navbar .nav > .active > a,
+            .navbar .nav > .active > a:hover,
+            .navbar .nav > .active > a:focus {
+                color: #fff !important;
+                background: transparent !important;
+                box-shadow: none !important;
+            }
+            .navbar-inverse .navbar-inner{
+                padding-bottom: -10px;
+                padding-top: -10px;
+            }
+        </style>
+        
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('body').scrollspy({
+                target: '#navbar',
+                offset: 100
+            });
+
+        $('.navbar a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            var target = $(this.hash);
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 90
+                }, 500);
+            }
+        });
+    
+        $('#back-to-top').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);});
+        });
+    </script>
+
+    </head>
+    <body data-spy="scroll" data-target="#navbar" data-offset="80">
+        <div class="navbar navbar-fixed-top navbar-inverse" id="navbar">
+            <div class="navbar-inner">
+                <div class="nav-container">
+                    <a class="brand" href="#" id="back-to-top">Feng Jiang</a>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#profile">Profile</a></li>
+                        <li class="nav-item"><a href="#biography">Biography</a></li>
+                        <li class="nav-item"><a href="#research">Research</a></li>
+                        <li class="nav-item"><a href="#publications">Publications</a></li>
+                        <li class="nav-item"><a href="#industry">Industry</a></li>
+                        <li class="nav-item"><a href="#teaching">Teaching</a></li>
+                        <li class="nav-item"><a href="#honors">Honors</a></li>
+                        <li class="nav-item"><a href="#research_experience">Experience</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+        <div id="body">
+            <section id="profile">
+                <style>
+                    .profile-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        align-items: flex-start;
+                        max-width: 900px;
+                        margin: 15px -20px;
+                        padding: 40px;
+                        margin-bottom: -30px;
+                    }
+                    
+                    .profile-info {
+                        flex: 1;
+                        min-width: 300px;
+                    }
+                    
+                    .profile-image {
+                        width: 250px;
+                        border-radius: 5px;
+                    }
+                    
+                    @media (max-width: 768px) {
+                        .profile-container {
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            text-align: center;
+                            padding: 0px;
+                        }
+                        
+                        .profile-image {
+                            margin: 0 auto;
+                            width: 200px;
+                        }
+                    }
+                </style>
+            
+                <div class="profile-container">
+                    <div class="profile-info">
+                        <h2><b>Feng Jiang</b></h2>
+                        <p>PhD Student in Computer Science</p>
+                        <p>University of Texas at Arlington<br/>
+                        Arlington, TX</p>
+                        <p><b>Email:</b> alanfengjiang@gmail.com</p>
+                        <p>
+                            <a href="https://scholar.google.com/citations?user=6OdM9AUAAAAJ&hl=zh-CN" target="_blank">[Google Scholar]</a> &nbsp;&nbsp;
+                            <a href="https://github.com/fengjiang02" target="_blank">[GitHub]</a> &nbsp;&nbsp;
+                            <a href="upload/Feng_Jiang_Resume.pdf" target="_blank">[Curriculum Vitae]</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="upload/images/Feng_Jiang.jpg" alt="Feng Jiang" class="profile-image"/>
+                    </div>
+                </div>
+            </section>
+            <br />
+            
+            <section id="biography">
+                <h4>Biography</h4>
+            <p class="contentItem">
+            I am a fourth-year PhD student in Computer Science at the University of Texas at Arlington (John S. Schuchman Outstanding Doctoral Student). My PhD advisor is <a href="https://ranger.uta.edu/~huang/" target="_blank">Prof. Junzhou Huang</a>. I received my M.S. in Software Engineering from UTA and B.E. in Software Engineering from Xi'an Jiaotong University City College.
+            </p>
+            <br />
+            </section>
+
+            <section id="opportunities">
+            <h4>Seeking Opportunities</h4>
+            <p class="contentItem">
+            I am actively seeking internship opportunities for <b>Spring/Summer/Fall 2026, or full-time positions</b>. My research interests focus on multimodal foundation models, large language models for computational biology, and AI-driven drug discovery.
+            </p>
+            <br />
+            </section>
+            
+            <section id="research">
+            <h4>Research</h4>
+            <p class="contentItem">
+            - Multimodal Representation Learning and Cross-modal Alignment<br/>
+            - Graph Neural Networks and Geometric Deep Learning<br/>
+            - Robust Learning under Data Imbalance<br/>
+            - Multimodal Foundation Models for Computational Biology and Immunoinformatics
+            </p>
+            <br />
+            </section>
+
+            <section id="publications">
+            <h4>Publications</h4>
+            <p class="contentItem"><i>10 selected publications including NeurIPS (Spotlight), ICCV, ECCV, AAAI, and journals.</i></p>
+            <ol type="1">
+                <li><b>Feng Jiang</b>, Mangal Prakash, Hehuan Ma, Jianyuan Deng, Yuzhi Guo, Amina Mollaysa, Tommaso Mansi, Rui Liao and Junzhou Huang, "TRIDENT: Tri-Modal Molecular Representation Learning with Taxonomic Annotations and Local Correspondence", In Proc. of the 39th Annual Conference on Neural Information Processing Systems, NeurIPS'25, San Diego, CA, USA, December 2025. <b><i>(NeurIPS Spotlight, 3% acceptance rate)</i></b></li><br />
+
+                <li><b>Feng Jiang</b>, Amina Mollaysa, Hehuan Ma, Tommaso Mansi, Junzhou Huang, Mangal Prakash and Rui Liao, "GRAM-DTI: Adaptive Multimodal Representation Learning for Drug–Target Interaction Prediction", NeurIPS 2025 2nd Workshop on Multi-modal Foundation Models and Large Language Models for Life Sciences.</li><br />
+
+                <li><b>Feng Jiang</b>, Yuzhi Guo, Hehuan Ma, Saiyang Na, Weizhi An, Bing Song, Yi Han, Jean Gao, Tao Wang and Junzhou Huang, <a href="https://dl.acm.org/doi/10.1145/3698587.3701389" target="_blank">"AlphaEpi: Enhancing B Cell Epitope Prediction with AlphaFold 3"</a>, In Proc. of the 15th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics, ACM BCB'24, Shenzhen, China, November 2024.</li><br />
+
+                <li><b>Feng Jiang</b>, Yuzhi Guo, Hehuan Ma, Saiyang Na, Wenliang Zhong, Yi Han, Tao Wang, Junzhou Huang, <a href="https://academic.oup.com/bib/article/25/4/bbae343/7713742" target="_blank">"GTE: A Graph Learning Framework for Prediction of T-Cell Receptors and Epitopes Binding Specificity"</a>, Briefings in Bioinformatics, Volume 25, Issue 4, July 2024.</li><br />
+
+                <li>Wenliang Zhong, Rob Barton, Weizhi An, <b>Feng Jiang</b>, Hehuan Ma, Yuzhi Guo, Abhishek Dan, Shioulin Sam, Karim Bouyarmane and Junzhou Huang, "Zero-Shot Composed Image Retrieval via Dual-Stream Instruction-Aware Distillation", In Proc. of the 26th IEEE/CVF International Conference on Computer Vision, ICCV'25, Honolulu, Hawaii, USA, October 2025.</li><br />
+
+                <li>Miao, Y., Guo, Y., Ma, H., Yan, J., <b>Jiang, F</b>., Liao, R., & Huang, J. (2025, April). GoBERT: Gene Ontology Graph Informed BERT for Universal Gene Function Prediction. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 39, No. 1, pp. 622-630).</li><br />
+                
+                <li>Weizhi An, Wenliang Zhong, <b>Feng Jiang</b>, Hehuan Ma and Junzhou Huang, <a href="https://eccv.ecva.net/virtual/2024/poster/2692" target="_blank">"Causal Subgraphs and Information Bottlenecks: Redefining OOD Robustness in Graph Neural Networks"</a>, In Proc. of the 18th European Conference on Computer Vision, ECCV'24, Milan, Italy, October 2024.</li><br />
+                
+                <li>Hehuan Ma, <b>Feng Jiang</b>, Yuzhi Guo and Junzhou Huang, "Towards Robust Self-training for Molecular Biology Prediction Tasks", Journal of Computational Biology, Volume 31, Issue 3, pp. 213-228, March 2024.</li><br />
+                
+                <li>Saiyang Na, Yuzhi Guo, <b>Feng Jiang</b>, Hehuan Ma, Jean Gao and Junzhou Huang, "Segment Any Cell: A SAM-based Auto-prompting Fine-tuning Framework for Nuclei Segmentation", IEEE Transactions on Neural Networks and Learning Systems, <i>To Appear</i>.</li><br />
+                
+                <li>Hehuan Ma, <b>Feng Jiang</b>, Yu Rong, Yuzhi Guo and Junzhou Huang, <a href="https://dl.acm.org/doi/abs/10.1145/3535508.3545998" target="_blank">"Robust Self-training Strategy for Various Molecular Biology Prediction Tasks"</a>, In Proc. of the 13th ACM International Conference on Bioinformatics, Computational Biology and Health Informatics, ACM BCB'22, Chicago, Illinois, USA, August 2022.</li>
+            </ol>
+            <br />
+            </section>
+
+            <section id="industry">
+            <h4>Industry Experience</h4>
+            <p class="contentItem">
+            <b>Janssen Research & Development, LLC, NJ, USA</b><br/>
+            <i>R&D Data Science & Digital Health DSAI Intern (May 2025 - Aug 2025)</i>
+            <ul>
+                <li>Developed multimodal large language models for molecular toxicity prediction and drug-target binding affinity prediction, integrating molecular structures with textual descriptions to enhance prediction accuracy.</li>
+                
+                <li>Built and curated large-scale molecular datasets from PubChem for pre-training foundation models, achieving state-of-the-art performance on toxicity prediction benchmarks.</li>
+                
+                <li>Collaborated with cross-functional teams to deploy machine learning models for early-stage drug discovery pipelines.</li>
+                
+                <li><b>Recognition:</b> Work selected as team highlight showcase for exceptional research impact and innovation.</li>
+                
+                <li><b>Publications:</b> 1 NeurIPS workshop poster, 1 ICML workshop paper, and 1 manuscript submitted to ICLR'26.</li>
+            </ul>
+            </p>
+            <br />
+            </section>
+
+            <section id="teaching">
+            <h4>Teaching Experience</h4>
+            <ul class="teaching-list">
+                <li>2248-CSE-6324-980-ADV TOPS SOFTWARE ENGINEERING <i>Fall 2024</i></li>
+                <li>2245-CSE-3314-002-PROFESSIONAL PRACTICES <i>Summer 2024</i></li>
+                <li>2242-CSE-6324-001-ADV TOPS SOFTWARE ENGINEERING <i>Spring 2024</i></li>
+                <li>2238-CSE-6324-980-ADV TOPS SOFTWARE ENGINEERING <i>Fall 2023</i></li>
+                <li>2232-CSE-6324-001-ADV TOPS SOFTWARE ENGINEERING <i>Spring 2023</i></li>
+                <li>2228-CSE-6324-980-ADV TOPS SOFTWARE ENGINEERING <i>Fall 2022</i></li>
+                <li>2228-CSE-5325-003-SFWR ENG II: MGMT, MAIN, & QA <i>Fall 2022</i></li>
+            </ul>
+            <br />
+            </section>
+
+            <section id="honors">
+            <h4>Honors</h4>
+            <ul class="contentItem">
+                <li>John S. Schuchman Outstanding Doctoral Student Award, UTA (April 2023)</li>
+            </ul>
+            <br />
+            </section>
+
+            <section id="research_experience">
+            <h4>Research Experience</h4>
+            
+            <p class="contentItem">
+            <b>(2024.12-Now) Advanced Multimodal Alignment for Molecular Representation Learning</b>
+            <ul>
+                <li>Proposed a volume-based alignment approach (TRIDENT) by transforming GRAM (Gramian) matrices derived from multimodal representations into volumetric features, enabling more effective cross-modal correspondence learning and achieving superior performance on protein-text retrieval tasks. <i>Accepted to NeurIPS'25 as Spotlight (3% acceptance rate)</i>.</li>
+                
+                <li>Developed novel multimodal alignment techniques to improve drug-target interaction (DTI) prediction by effectively integrating molecular graphs and protein sequences. <i>Manuscript submitted to ICLR'26</i>.</li>
+                
+                <li>Designed a disentangled multimodal alignment framework that separates modality-specific and modality-invariant features, enhancing model interpretability and generalization on downstream molecular property prediction tasks.</li>
+            </ul>
+            </p>
+
+            <p class="contentItem">
+            <b>(2024.2-12) Multimodal Large Language Model</b>
+            <ul>
+                <li><b>LLaPA:</b> We leverage multimodal approaches using large language models to enhance protein function prediction. Our method integrates protein sequences and functional descriptions from UniProt with contrastive learning techniques to predict the potential functions of unknown sequences. The model demonstrates superior performance in protein-text retrieval tasks and downstream predictions, while also showing reliable capabilities in both protein sequence and functional description generation.</li>
+                
+                <li><b>AlphaEpi:</b> We combine sequence and structure information by using the protein language model ESM-2 for sequence data and AlphaFold 3 for structural data. A dynamic alignment module merges these modalities, leading to exceptional performance in B-cell epitope prediction. <i>This work has been accepted to the ACM BCB 2024 Conference</i>.</li>
+                
+                <li><b>Toxmm:</b> We developed a multi-modal molecular embedding model for toxicity prediction by integrating SMILES structures and their textual descriptions. We curated a comprehensive dataset of over 50,000 molecular SMILES-text pairs from PubChem database for pre-training. Our approach achieved state-of-the-art performance on the toxicity dataset.</li>
+            </ul>
+            </p>
+
+            <p class="contentItem">
+            <b>(2023.7-2024.3) A Graph Framework for TCR and Epitopes Binding Prediction</b>
+            <ul>
+                <li>Developed a novel graph-based framework that models TCR-epitope binding as a topology learning problem, utilizing residue interaction patterns and structural information to capture complex binding mechanisms.</li>
+                
+                <li>Enhanced model performance through deep AUC maximization and dynamic graph attention mechanisms, achieving state-of-the-art performance on multiple benchmark datasets.</li>
+                
+                <li>Our method significantly outperforms existing approaches in both accuracy and efficiency for TCR-epitope binding prediction. <i>Published in Briefings in Bioinformatics</i>.</li>
+            </ul>
+            </p>
+
+            <p class="contentItem">
+            <b>(2023.3-2024.1) SAM-based Auto-prompting Fine-tuning Framework</b>
+            <ul>
+                <li>Segment Any Cell is an innovative framework designed to enhance the Segmentation Anything Model (SAM) for nuclei segmentation.</li>
+                
+                <li>Low-Rank Adaptation (LoRA) is integrated within the attention layer of the Transformer to improve the fine-tuning process. An auto prompt generator is introduced to guide the segmentation process.</li>
+            </ul>
+            </p>
+
+            <p class="contentItem">
+            <b>(2022.3-2023.4) LLM in Protein Structure Prediction</b>
+            <ul>
+                <li>Developed a novel teacher-student framework to address the challenge of limited structural data in protein research. The Teacher model, trained on over 20,000 high-quality labeled structures, generates reliable pseudo labels to guide the training of a Student protein language model across millions of sequences.</li>
+                
+                <li>Published in BCB'22 and accepted by the Journal of Computational Biology 2024.</li>
+            </ul>
+            </p>
+            <br />
+            </section>
+
+            <div class="contentItem">
+                *Last updated on Nov 2024.
+                <b></b>
+                <b></b>
+            </div>
+        </div>
+    </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap-scrollspy.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+    </body>
+</html>
