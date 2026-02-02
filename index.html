@@ -226,7 +226,7 @@
             <p class="contentItem">
             - Multimodal Representation Learning and Cross-modal Alignment<br/>
             - Robust Learning under Incomplete Data<br/>
-            - Multimodal Foundation Models for Computational Pathology
+            - Multimodal Foundation Models for Computational Pathology<br/>
             - Guideline-Driven Learning and Prompt Engineering<br/>
             </p>
             <br />
@@ -280,53 +280,40 @@
             <h4>Research Experience</h4>
             
             <p class="contentItem">
-            <b>(2024.12-Now) Advanced Multimodal Alignment for Molecular Representation Learning</b>
+            <b>(2023.8-Now) Multimodal Representation Learning with Missing Modalities</b>
             <ul>
-                <li>Proposed a volume-based alignment approach (TRIDENT) by transforming GRAM (Gramian) matrices derived from multimodal representations into volumetric features, enabling more effective cross-modal correspondence learning and achieving superior performance on protein-text retrieval tasks. <i>Accepted to NeurIPS'25 as Spotlight (3% acceptance rate)</i>.</li>
+                <li>Designed self-supervised multimodal learning frameworks to align heterogeneous data with incomplete modality coverage. Proposed global alignment objectives and geometry-aware losses that enable learning unified embeddings from unimodal, bimodal, and partially observed data without requiring fully paired samples. <i>Manuscript submitted to CVPR 2026</i>.</li>
                 
-                <li>Developed novel multimodal alignment techniques to improve drug-target interaction (DTI) prediction by effectively integrating molecular graphs and protein sequences. <i>Manuscript submitted to ICLR'26</i>.</li>
+                <li>Developed novel alignment methods beyond pairwise contrastive learning, including volume-based and hybrid geometric objectives that preserve higher-order semantic structure and improve zero-shot generalization across datasets and modality combinations. <i>Manuscript submitted to CVPR 2026</i>.</li>
                 
-                <li>Designed a disentangled multimodal alignment framework that separates modality-specific and modality-invariant features, enhancing model interpretability and generalization on downstream molecular property prediction tasks.</li>
+                <li>Proposed attention-based fusion and instance selection mechanisms to integrate multi-level representations from multiple pretrained foundation models, enabling scalable learning under sparse, noisy, and high-dimensional multimodal inputs. <i>This work has been accepted to the MICCAI 2025 Conference, Front. Med. 2025 Journal, ACM BCB 2024 Conference</i>.</li>
             </ul>
             </p>
 
             <p class="contentItem">
-            <b>(2024.2-12) Multimodal Large Language Model</b>
+            <b>(2024.10-Now) Multimodal Large Language Model</b>
             <ul>
-                <li><b>LLaPA:</b> We leverage multimodal approaches using large language models to enhance protein function prediction. Our method integrates protein sequences and functional descriptions from UniProt with contrastive learning techniques to predict the potential functions of unknown sequences. The model demonstrates superior performance in protein-text retrieval tasks and downstream predictions, while also showing reliable capabilities in both protein sequence and functional description generation.</li>
+                <li>Engineered a two-stage adaptation framework to address fundamental limitations in Multimodal Large Language Models (MLLMs) for composed cross-modal retrieval. Formalized the composed retrieval task and developed a comprehensive benchmark for evaluating compositional queries across modalities. <i>Manuscript submitted to CVPR 2026</i>.</li>
                 
-                <li><b>AlphaEpi:</b> We combine sequence and structure information by using the protein language model ESM-2 for sequence data and AlphaFold 3 for structural data. A dynamic alignment module merges these modalities, leading to exceptional performance in B-cell epitope prediction. <i>This work has been accepted to the ACM BCB 2024 Conference</i>.</li>
-                
-                <li><b>Toxmm:</b> We developed a multi-modal molecular embedding model for toxicity prediction by integrating SMILES structures and their textual descriptions. We curated a comprehensive dataset of over 50,000 molecular SMILES-text pairs from PubChem database for pre-training. Our approach achieved state-of-the-art performance on the toxicity dataset.</li>
+                <li>Designed a Vision Language Model framework implementing single-model multi-modal fusion. Replaced dual-encoder architectures with transformer-based deep fusion to capture cross-modal relationships. <i>This work has been accepted to the ISBI 2025 Conference</i>.</li>
             </ul>
             </p>
 
             <p class="contentItem">
-            <b>(2023.7-2024.3) A Graph Framework for TCR and Epitopes Binding Prediction</b>
+            <b>(2025.1-Now) Guideline-Driven Learning and Prompt Engineering</b>
             <ul>
-                <li>Developed a novel graph-based framework that models TCR-epitope binding as a topology learning problem, utilizing residue interaction patterns and structural information to capture complex binding mechanisms.</li>
+                <li>Developed a Guideline-Driven Prompt (GDP) optimization framework that shifts learning paradigm from data-driven training to guideline-driven reasoning with minimal annotated examples. Designed a Retrieval Augmented Generation (RAG) system to extract and synthesize essential fragments from complex guideline documents into structured, executable prompts. <i>This work has been accepted to the AAAI 2026 Conference</i>.</li>
                 
-                <li>Enhanced model performance through deep AUC maximization and dynamic graph attention mechanisms, achieving state-of-the-art performance on multiple benchmark datasets.</li>
+                <li>Engineered RGCWM, a Rule-Grounded Causal World Model for explicit guideline execution and constraint satisfaction. Addressed limitations of implicit text-based reasoning by building an explicit state space directly from guideline text. <i>Manuscript submitted to ACL ARR 2026</i>.</li>
                 
-                <li>Our method significantly outperforms existing approaches in both accuracy and efficiency for TCR-epitope binding prediction. <i>Published in Briefings in Bioinformatics</i>.</li>
+                <li>Designed a text-guided multi-instance learning framework integrating external textual guidance with sequence modeling. Incorporated textual guidance from domain experts and large language models (LLMs) to enhance feature representation. Implemented Dynamic Time Warping (DTW)-based sequence segmentation to handle temporal misalignment in sequential data. <i>This work has been accepted to the MICCAI 2025 Conference</i>.</li>
             </ul>
             </p>
 
             <p class="contentItem">
-            <b>(2023.3-2024.1) SAM-based Auto-prompting Fine-tuning Framework</b>
+            <b>(2024.6-2024.7) AstraZeneca's Challenge</b>
             <ul>
-                <li>Segment Any Cell is an innovative framework designed to enhance the Segmentation Anything Model (SAM) for nuclei segmentation.</li>
-                
-                <li>Low-Rank Adaptation (LoRA) is integrated within the attention layer of the Transformer to improve the fine-tuning process. An auto prompt generator is introduced to guide the segmentation process.</li>
-            </ul>
-            </p>
-
-            <p class="contentItem">
-            <b>(2022.3-2023.4) LLM in Protein Structure Prediction</b>
-            <ul>
-                <li>Developed a novel teacher-student framework to address the challenge of limited structural data in protein research. The Teacher model, trained on over 20,000 high-quality labeled structures, generates reliable pseudo labels to guide the training of a Student protein language model across millions of sequences.</li>
-                
-                <li>Published in BCB'22 and accepted by the Journal of Computational Biology 2024.</li>
+                <li>Applied SAM (Segment Anything Model) and ensemble learning techniques to improve tumor segmentation accuracy. <i>This work achieved 1st place in the first round and top 3 in the second round of the CoSolve Sprints challenge on 3D MRI mouse cancer segmentation. I am in charge of this project.</i>.</li>
             </ul>
             </p>
             <br />
